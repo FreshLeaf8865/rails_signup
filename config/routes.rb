@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/help', to: 'pages#help'
   get '/about', to: 'pages#about'
+  post '/signup',  to: 'users#create'
+  resources :users
 end
